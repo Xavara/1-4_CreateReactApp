@@ -2,6 +2,7 @@ import React from "react";
 import { Link, Route } from "wouter";
 import "./App.css";
 import ListOfGifs from "./components/ListOfGifs";
+import Busqueda from "./components/Busqueda";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Link to="/gif/Morty">Gifs de Morty</Link>
           <Link to="/gif/Bart">Gifs de Bart</Link>
         </header>
+        <Busqueda/>
         <Route component={ListOfGifs} path="/gif/:keyword" />
       </section>
     </div>
